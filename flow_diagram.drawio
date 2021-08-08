@@ -1,1 +1,75 @@
-<mxfile host="app.diagrams.net" modified="2021-08-08T01:23:05.124Z" agent="5.0 (Macintosh)" version="14.9.5" etag="kMT7kilX_WtjOGJr_2mt" type="github"><diagram id="AqsIXDjQnFELrPGmXSSX">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-08-08T01:38:59.231Z" agent="5.0 (Macintosh)" etag="FEshTAk-Wm0MD9YXMPXQ" version="14.9.5" type="github">
+  <diagram id="AqsIXDjQnFELrPGmXSSX" name="Page-1">
+    <mxGraphModel dx="1594" dy="574" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-2" value="Claims Data" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-3" value="Eligibility Data" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="30" y="380" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-4" value="Medication Knowledge" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="20" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vHexbeXs3hqtzFo_xxWM-5" target="vHexbeXs3hqtzFo_xxWM-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-5" value="&lt;div&gt;Amazon&lt;/div&gt;&lt;div&gt;S3&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="330" y="366.25" width="90" height="87.5" as="geometry" />
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-6" value="" style="endArrow=classic;html=1;exitX=0.923;exitY=0.997;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.008;entryY=0.58;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vHexbeXs3hqtzFo_xxWM-2" target="vHexbeXs3hqtzFo_xxWM-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="450" y="500" as="sourcePoint" />
+            <mxPoint x="550" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-7" value="Airflow Sensor / Operator" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="vHexbeXs3hqtzFo_xxWM-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-8" value="&lt;u&gt;&lt;b&gt;Raw data loaded by date&lt;/b&gt;&lt;/u&gt;&lt;br&gt;s3://&amp;lt;inbound&amp;gt;/2021/08/01/&lt;br&gt;s3://&amp;lt;inbound&amp;gt;/2021/08/02/&lt;br&gt;s3://&amp;lt;inbound&amp;gt;/2021/08/03/" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="470" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="vHexbeXs3hqtzFo_xxWM-21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="730" y="410" as="targetPoint" />
+            <mxPoint x="700" y="410" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-14" value="&lt;div&gt;Amazon&lt;/div&gt;&lt;div&gt;S3&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="730" y="366.25" width="90" height="87.5" as="geometry" />
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" source="vHexbeXs3hqtzFo_xxWM-22" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1180" y="410" as="targetPoint" />
+            <mxPoint x="1090" y="410" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" target="vHexbeXs3hqtzFo_xxWM-22" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="820" y="410" as="sourcePoint" />
+            <mxPoint x="870" y="409.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-18" value="&lt;div&gt;Amazon&lt;/div&gt;&lt;div&gt;S3&lt;br&gt;&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="1180" y="366.25" width="90" height="87.5" as="geometry" />
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-19" value="&lt;u&gt;&lt;b&gt;Mapping / Common Data model&lt;/b&gt;&lt;/u&gt;&lt;br&gt;s3://&amp;lt;staging&amp;gt;/2021/08/01/&lt;br&gt;s3://&amp;lt;staging&amp;gt;/2021/08/02/&lt;br&gt;s3://&amp;lt;staging&amp;gt;/2021/08/03/" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="470" width="190" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-20" value="Analytics ready datasets &lt;br&gt;(Partitioned by use case)&lt;br&gt;s3://&amp;lt;outbound&amp;gt;/rxclaims/&amp;lt;parts&amp;gt;&lt;br&gt;s3://&amp;lt;outbound&amp;gt;/eligibility/&amp;lt;parts&amp;gt;&lt;br&gt;s3://&amp;lt;outbound&amp;gt;/medkb/&amp;lt;parts&amp;gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1125" y="453.75" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-21" value="&lt;div align=&quot;left&quot;&gt;&lt;ol&gt;&lt;li&gt;Process newly added data by date,&lt;/li&gt;&lt;li&gt;Field level &amp;amp; Standard value mapping,&lt;/li&gt;&lt;li&gt;Append mapped data to maintain history&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+          <mxGeometry x="460" y="360" width="220" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="vHexbeXs3hqtzFo_xxWM-22" value="&lt;div align=&quot;left&quot;&gt;&lt;ol&gt;&lt;li&gt;Necessary transformation steps&lt;/li&gt;&lt;li&gt;Consider latest information wherever applicable&lt;/li&gt;&lt;li&gt;Compute statistics based off of loaded datasets&lt;/li&gt;&lt;li&gt;Save analytics ready datasets to S3 and have Athena tables for query&lt;br&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=middle;align=left;" vertex="1" parent="1">
+          <mxGeometry x="890" y="350" width="220" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
